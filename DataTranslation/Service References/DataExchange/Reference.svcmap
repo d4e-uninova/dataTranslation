@@ -18,14 +18,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://gris-groupware.uninova.pt:8080" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://127.0.0.1:8040" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="68886d25-3e3f-4638-af50-e25564a31085" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?disco" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="0362b616-c99a-445f-94c2-19e75b65df78" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?xsd=xsd1" />
-    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="c11ea405-b932-4b9f-8be8-3c732523257b" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?wsdl" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="32884804-a55f-4c6e-a8a4-a0b3f0309884" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?xsd=xsd2" />
-    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="2da62491-3c32-4901-958c-6eb95e210467" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?xsd=xsd0" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="37f94a92-06ec-4dfd-a33e-c3891f739c02" SourceId="1" SourceUrl="http://127.0.0.1:8040/?xsd=xsd2" />
+    <MetadataFile FileName="item31.xsd" MetadataType="Schema" ID="9feeedac-f6fb-49f1-be48-2801959c8630" SourceId="1" SourceUrl="http://127.0.0.1:8040/?xsd=xsd1" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="51d784c6-1e63-4940-96aa-6f8228d3b89e" SourceId="1" SourceUrl="http://127.0.0.1:8040/?disco" />
+    <MetadataFile FileName="item32.xsd" MetadataType="Schema" ID="2287db4b-e0c4-44a7-9561-e4099c1a5b7d" SourceId="1" SourceUrl="http://127.0.0.1:8040/?xsd=xsd0" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="5f34e38c-2fd9-4954-94dc-39bbd6966923" SourceId="1" SourceUrl="http://127.0.0.1:8040/?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
