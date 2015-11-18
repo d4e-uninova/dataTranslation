@@ -108,16 +108,16 @@
     <Content Include="Service References\DataExchange\DataTranslation.DataExchange.ServiceTranslationResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Service References\DataExchange\item3.xsd">
+    <None Include="Service References\DataExchange\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\DataExchange\item31.xsd">
+    <None Include="Service References\DataExchange\item1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\DataExchange\item32.xsd">
+    <None Include="Service References\DataExchange\item2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\DataExchange\Service1.wsdl" />
+    <None Include="Service References\DataExchange\Service.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -133,7 +133,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\DataExchange\item1.disco" />
+    <None Include="Service References\DataExchange\item.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
