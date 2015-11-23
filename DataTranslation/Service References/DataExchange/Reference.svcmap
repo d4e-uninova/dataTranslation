@@ -21,11 +21,11 @@
     <MetadataSource Address="http://127.0.0.1:8080" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="b3c9071a-5056-4edb-b5d1-ebbcb9d08b3e" SourceId="1" SourceUrl="http://127.0.0.1:8080/?wsdl" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="d04efbd6-cbc2-45f6-8556-e54d81278d50" SourceId="1" SourceUrl="http://127.0.0.1:8080/?xsd=xsd0" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="63bc6209-9769-470d-a5b3-f90f160efaef" SourceId="1" SourceUrl="http://127.0.0.1:8080/?xsd=xsd1" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="3564de2b-7734-4ddc-b872-11f89e75a130" SourceId="1" SourceUrl="http://127.0.0.1:8080/?disco" />
-    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="35bcf19f-d478-42ca-a45f-6c5ba5f9ae17" SourceId="1" SourceUrl="http://127.0.0.1:8080/?xsd=xsd2" />
+    <MetadataFile FileName="item1.disco" MetadataType="Disco" ID="e2d145f7-6dcb-42a5-90cf-94c0dc4b0eb3" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?disco" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="035c57d1-ed86-402a-b08c-d56e885f3a63" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?xsd=xsd1" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="6ebc24f7-564b-4572-91ca-c6608ad0a05c" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?wsdl" />
+    <MetadataFile FileName="item31.xsd" MetadataType="Schema" ID="81028aeb-d207-4fd1-90ed-02238645f31a" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?xsd=xsd2" />
+    <MetadataFile FileName="item32.xsd" MetadataType="Schema" ID="a7159505-56ea-4cc1-a3b3-1539076ef461" SourceId="1" SourceUrl="http://gris-groupware.uninova.pt:8080/?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

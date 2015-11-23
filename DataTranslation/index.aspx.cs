@@ -13,7 +13,7 @@ namespace DataTranslation
     public partial class index : System.Web.UI.Page
     {
         private DataExchange.DataTranslationClient client = new DataExchange.DataTranslationClient();
-
+        
         protected void Page_Load(object sender,EventArgs e)
         {
             newFile.Visible = FileUpload1.HasFile;
@@ -149,10 +149,6 @@ namespace DataTranslation
             {
                 Global.logger.log(ex.Message, Logger.LogType.ERROR);
             }
-        }
-
-        void client_translateCompleted(object sender, DataExchange.translateCompletedEventArgs e)
-        {
         }
     }
 }
