@@ -15,6 +15,7 @@ namespace DataTranslation
 
         public static Dictionary<SafeWaitHandle, string> fileNames = new Dictionary<SafeWaitHandle, string>();
         public static Dictionary<SafeWaitHandle, string> addresses = new Dictionary<SafeWaitHandle, string>();
+        public static Dictionary<SafeWaitHandle, DataExchange.DataTranslationClient> clients = new Dictionary<SafeWaitHandle,  DataExchange.DataTranslationClient>();
         public static Logger logger;
 
         public static string serverRoot;

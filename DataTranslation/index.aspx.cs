@@ -12,8 +12,6 @@ namespace DataTranslation
 {
     public partial class index : System.Web.UI.Page
     {
-        private DataExchange.DataTranslationClient client = new DataExchange.DataTranslationClient();
-        
         protected void Page_Load(object sender,EventArgs e)
         {
             newFile.Visible = FileUpload1.HasFile;
@@ -110,6 +108,7 @@ namespace DataTranslation
         {
             try
             {
+                DataExchange.DataTranslationClient client = new DataExchange.DataTranslationClient();
                 IAsyncResult asyncResult = client.Begintranslate(new DataExchange.ServiceTranslationInfo
                    {
                        Data = uploadedFile,
@@ -118,6 +117,7 @@ namespace DataTranslation
                    }, callback, client);
                 Global.fileNames.Add(asyncResult.AsyncWaitHandle.SafeWaitHandle, outFile);
                 Global.addresses.Add(asyncResult.AsyncWaitHandle.SafeWaitHandle, address);
+                Global.clients.Add(asyncResult.AsyncWaitHandle.SafeWaitHandle, client);
             }
             catch (Exception ex)
             {
@@ -131,6 +131,7 @@ namespace DataTranslation
             {
                 string path = Global.fileNames[asyncResult.AsyncWaitHandle.SafeWaitHandle];
                 string address = Global.addresses[asyncResult.AsyncWaitHandle.SafeWaitHandle];
+                DataExchange.DataTranslationClient client = Global.clients[asyncResult.AsyncWaitHandle.SafeWaitHandle];
                 DataExchange.ServiceTranslationResult result = client.Endtranslate(asyncResult);
                 if (result.Succeeded)
                 {
@@ -142,8 +143,10 @@ namespace DataTranslation
                 {
                     Global.logger.log("Conversion requested by: " + address + " failed",Logger.LogType.ERROR);
                 }
+                client.Close();
                 Global.fileNames.Remove(asyncResult.AsyncWaitHandle.SafeWaitHandle);
                 Global.addresses.Remove(asyncResult.AsyncWaitHandle.SafeWaitHandle);
+                Global.clients.Remove(asyncResult.AsyncWaitHandle.SafeWaitHandle);
             }
             catch(Exception ex)
             {
